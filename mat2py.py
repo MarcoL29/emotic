@@ -263,6 +263,7 @@ if __name__ == '__main__':
     ann_path_src = os.path.join(args.data_dir, 'Annotations','Annotations.mat')
     data_path_src = os.path.join(args.data_dir, 'emotic')
     save_path = os.path.join(args.data_dir, args.save_dir_name)
+    print(save_path)
     if not os.path.exists(save_path):
       os.makedirs(save_path)
     

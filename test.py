@@ -130,9 +130,9 @@ def test_emotic(result_path, model_path, ind2cat, ind2vad, context_norm, body_no
     :param args: Runtime arguments.
     '''    
     # Prepare models 
-    model_context = torch.load(os.path.join(model_path,'model_context1.pth'))
-    model_body = torch.load(os.path.join(model_path,'model_body1.pth'))
-    emotic_model = torch.load(os.path.join(model_path,'model_emotic1.pth'))
+    model_context = torch.load(os.path.join(model_path, 'model_context1.pth'), weights_only=False)
+    model_body = torch.load(os.path.join(model_path,'model_body1.pth'), weights_only=False)
+    emotic_model = torch.load(os.path.join(model_path,'model_emotic1.pth'), weights_only=False)
     print ('Succesfully loaded models')
 
     #Load data preprocessed npy files
